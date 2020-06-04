@@ -1,5 +1,4 @@
 ---
-layout: post
 title: G Suite SchoolID Integration Guide
 ---
 
