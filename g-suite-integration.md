@@ -11,30 +11,30 @@ This document describes how to configure Google G Suite for user authentication 
 
 Send the following information to the contact person for SchoolID at IST:
 
-| Setting       | Description                                                                                                                                                                                                                                                         |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Domain name   | The G Suite domain name is need to for SchoolID to recognize the source of the SAML Requests.                                                                                                                                                                       |
-| Email domains | This enables only users with a matching email domain for login to the G Suite domain. This is not a security setting but enables better error message and lets SchoolID know which of potentially several email addresses that is expected by the G Suite instance. |
+| Setting       | Description                                                                                                                                                                                                                                             |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Domain name   | The G Suite domain name is need to for SchoolID to recognize the source of the SAML Requests.                                                                                                                                                           |
+| Email domains | Ensures only users with a matching email domain can try login to G Suite. This is not a security setting but enables better error message and lets SchoolID know which of potentially several email addresses that is expected by the G Suite instance. |
 
 ## Setting up SSO with SchoolID as a third party IdP
 
-Related G Suite documentation: https://support.google.com/a/answer/60224
+Related G Suite documentation: [https://support.google.com/a/answer/60224](https://support.google.com/a/answer/60224)
 
 Configure the following in the G Suite administration console under `Security -> Settings -> Set up single sign-on (SSO) with a third party IdP`:
 
 | Setting                                       | Description                                                                                                                                                                                                                                                                                                 |
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Set up SSO with third-party identity provider | Check                                                                                                                                                                                                                                                                                                       |
-| Sign-in page URL                              | https://skolid.se/saml                                                                                                                                                                                                                                                                                      |
-| Sign-out page URL                             | https://skolid.se/logout                                                                                                                                                                                                                                                                                    |
-| Verification certificate                      | Download from https://skolid.se/saml/metadata/certificate                                                                                                                                                                                                                                                   |
+| Sign-in page URL                              | `https://skolid.se/saml`                                                                                                                                                                                                                                                                                    |
+| Sign-out page URL                             | `https://skolid.se/logout`                                                                                                                                                                                                                                                                                  |
+| Verification certificate                      | Download from [https://skolid.se/saml/metadata/certificate](https://skolid.se/saml/metadata/certificate)                                                                                                                                                                                                    |
 | Use a domain-specific issuer                  | Check                                                                                                                                                                                                                                                                                                       |
 | Network masks                                 | **NOTE** that during setup and testing it is recommended to use this setting to only enable SchoolID for some users. Also note that chrome devices are not affected by this setting and must be enabled to use SSO separately (see more information in the section `Setting up SchoolID for chrome devices` |
-| Change password URL                           | https://skolid.se/account                                                                                                                                                                                                                                                                                   |
+| Change password URL                           | `https://skolid.se/account`                                                                                                                                                                                                                                                                                 |
 
 ### Enabling SchoolID SSO for chrome devices
 
-Related G Suite documentation: https://support.google.com/chrome/a/answer/6060880
+Related G Suite documentation: [https://support.google.com/chrome/a/answer/6060880](https://support.google.com/chrome/a/answer/6060880)
 
 **NOTE** that the following settings can be applied for a part of the organization using the organizational units tree-view in the administration console. It is recommended to use this feature to limit the effects of the configuration while setting up and testing SchoolID.
 
