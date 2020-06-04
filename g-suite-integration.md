@@ -54,7 +54,7 @@ Configure the following in the G Suite administration under `Devices > Chrome ma
 | Single sign-on IdP redirection     | Recommended: `Allow users to go directly to the SAML SSO IdP page`                                                                                                                  |
 | Single Sign-On client certificates | Required for chrome device two factor authentication with SchoolID: `{"pattern":"https://skolid-mtls.azurewebsites.net","filter":{"SUBJECT":{"CN":"SchoolID Client Certificate"}}}` |
 
-## Enable chrome device two factor authentication with SchoolID
+## Enable two factor authentication for chrome devices
 
 The following section describes how to configure G Suite to enable chrome devices for two factor authentication with SchoolID. This allows the chrome device to be used as the second factor when authenticating the user with SchoolID on the device. This is achieved by utilizing hardware-backed private keys for mutual TLS authentication with SchoolID. The client certificates corresponding to the private keys are associated with the SchoolID user account after activating the account with SchoolID using the device.
 
