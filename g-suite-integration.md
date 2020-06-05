@@ -44,7 +44,7 @@ Configure the following in the G Suite administration `Devices > Chrome manageme
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Single sign-on                        | Required: `Enable SAML-based single sign-on for Chrome devices`                                                                                                                     |
 | Single sign-on Online Login Frequency | Optional                                                                                                                                                                            |
-| Client certificate                    | Required for chrome device two factor authentication with SchoolID: `{"pattern":"https://skolid-mtls.azurewebsites.net","filter":{"SUBJECT":{"CN":"SchoolID Client Certificate"}}}` |
+| Client certificate                    | Required for chrome device two factor authentication with SchoolID: `{"pattern":"https://skolid-mtls.azurewebsites.net","filter":{"SUBJECT":{"CN":"SkolID Client Certificate"}}}` |
 
 Configure the following in the G Suite administration under `Devices > Chrome management > (Settings) > Device Settings`:
 
@@ -52,7 +52,7 @@ Configure the following in the G Suite administration under `Devices > Chrome ma
 | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Single sign-on Cookie Behavior     | Required: `Enable transfer of SAML SSO Cookies into user session during sign-in`                                                                                                    |
 | Single sign-on IdP redirection     | Recommended: `Allow users to go directly to the SAML SSO IdP page`                                                                                                                  |
-| Single Sign-On client certificates | Required for chrome device two factor authentication with SchoolID: `{"pattern":"https://skolid-mtls.azurewebsites.net","filter":{"SUBJECT":{"CN":"SchoolID Client Certificate"}}}` |
+| Single Sign-On client certificates | Required for chrome device two factor authentication with SchoolID: `{"pattern":"https://skolid-mtls.azurewebsites.net","filter":{"SUBJECT":{"CN":"SkolID Client Certificate"}}}` |
 
 ## Enable two factor authentication for chrome devices
 
