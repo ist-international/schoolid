@@ -5,6 +5,7 @@ This document describes how to configure Google G Suite for user authentication 
 ## Prerequisites
 
 - G Suite administration access
+- SkolID accounts which G Suite email address
 - Enrolled chrome devices
 
 ## Provide SchoolID with G Suite information
